@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body{
+    background: url('im.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: rgb(248, 244, 244);
+    line-height: 1.6;
+}
+
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 10%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 35px;
+  text-decoration: none;
+  font-weight: 600;
+  color: whitesmoke;
+}
+
+.navbar a {
+  margin-left: 20px;
+  font-size: 18px;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.Hero{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px 0 0 0;
+}
+
+.About{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Projects{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Projects p a{
+  text-decoration: none;
+  color: red;
+}
+
+.foto {
+  display: flex;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.foto a{
+  margin: 60px;
+}
+
+.foto img{
+  opacity: 0.5;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.foto img:hover, .foto img:focus, .foto img:active{
+opacity: 1;
+transform: scale(1.2);
+width: 700px;
+transition: all 0.6s ease;
+}
+
+.Contact{
+  display: flex;
+ justify-content: center;
+}
+
+p{
+  font-size: 20px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+p:hover, p:focus, p:active{
+ transform: scale(1.2);/* Збільшення на 20% цей ефект не збільшує сам розмір елементу він робить це візуально*/
+  transition: all 0.3s ease;
+}
+
+h1, h2, h4{
+  font-size: 28px;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h1:hover, h2:hover, h4:hover{
+   transform: scale(1.2);
+  transition: all 0.3s ease;
+}
+
+.btn{
+  padding: 15px;
+  margin: 20px;
+  background-color: blue;
+  border: 2px solid yellow;
+  border-radius: 15px;
+  transition: all 0.6s ease;
+}
+
+.btn:hover, .btn:focus, .btn:active{
+  background-color: yellow;
+  border: 2px solid blue;
+  transition: all 0.6s ease;
+}
+
+i{
+  font-size: 30px;
+  transition: all 0.6s ease;
+}
+
+i:hover, i:focus, i:active{
+  font-size: 60px;
+  transition: all 0.6s ease;
+}
+
+
+@media (max-width: 1024px) {
+  .Hero, .About, .Projects, .Contact {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .foto {
+    flex-direction: column;
+    margin: 20px 0;
+  }
+
+  .foto img {
+    width: 80%;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  h1, h2, h4 {
+    font-size: 24px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar a {
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 14px;
+  }
+
+  .btn {
+    width: 100%;
+    text-align: center;
+    font-size: 16px;
+    padding: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .foto img {
+    width: 90%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  h1, h2, h4 {
+    font-size: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .Hero
+  {
+    padding-top: 100px;
+  }
+
+  .About{
+    padding-top: 200px;
+  }
+
+  .Projects{
+    padding-top: 200px;
+  }
+
+  p {
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}
+
+
+
+
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  header {
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
+  .navbar a {
+    font-size: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  .foto img {
+    width: 100%;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  h1, h2, h4 {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+}

@@ -293,6 +293,11 @@ i:hover, i:focus, i:active{
     margin-bottom: 5px;
   }
 
+  .Im {
+    height: fit-content;
+    width: fit-content;
+  }
+
   p {
     font-size: 14px;
     margin-top: 5px;
